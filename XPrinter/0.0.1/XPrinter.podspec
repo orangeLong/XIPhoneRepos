@@ -22,61 +22,61 @@ Pod::Spec.new do |s|
   s.dependency "JGProgressHUD"
   
   s.subspec 'Header' do |header|
-	header.source_files = 'Code/Project/Header/*.{h, m}'
+	header.source_files = 'Code/Project/Header/**/*.{h, m}'
   end
 
   s.subspec 'PrinterSetting' do |printerSetting|
 
     printerSetting.subspec 'Common' do |common|
-      common.source_files = 'Code/Project/PrinterSetting/Common/*.{h, m}'
+      common.source_files = 'Code/Project/PrinterSetting/Common/**/*.{h, m}'
     end	  
 
     printerSetting.subspec 'JOBluetooth' do |bluetooth|
-      bluetooth.source_files = 'Code/Project/PrinterSetting/JOBluetooth/*.{h, m}'
+      bluetooth.source_files = 'Code/Project/PrinterSetting/JOBluetooth/**/*.{h, m}'
       bluetooth.vendored_library = 'Code/Project/PrinterSetting/JOBluetooth/libJOBluetooth.a'
     end 
 
     printerSetting.subspec 'Print' do |print|
-      print.source_files = 'Code/Project/PrinterSetting/Print/*.{h, m}'
+      print.source_files = 'Code/Project/PrinterSetting/Print/**/*.{h, m}'
     end
 
     printerSetting.subspec 'Printer' do |printer|
-      printer.source_files = 'Code/Project/PrinterSetting/Printer/*.{h, m}'
+      printer.source_files = 'Code/Project/PrinterSetting/Printer/**/*.{h, m}'
     end
 
     printerSetting.subspec 'PrinterCommand' do |command|
-      command.source_files = 'Code/Project/PrinterSetting/PrinterCommand/*.{h, m}'
+      command.source_files = 'Code/Project/PrinterSetting/PrinterCommand/**/*.{h, m}'
     end
 
     printerSetting.subspec 'PrinterManager' do |manager|
-      manager.source_files = 'Code/Project/PrinterSetting/PrinterManager/*.{h, m}'
+      manager.source_files = 'Code/Project/PrinterSetting/PrinterManager/**/*.{h, m}'
     end
 
     printerSetting.subspec 'PrinterModel' do |model|
-      model.source_files = 'Code/Project/PrinterSetting/PrinterModel/*.{h, m}'
+      model.source_files = 'Code/Project/PrinterSetting/PrinterModel/**/*.{h, m}'
     end
   end
   
   s.subspec 'PrinterSettingVC' do |vc|
 
     vc.subspec 'BluetoothPrinterSetting' do |bluetoothVC|
-      bluetoothVC.source_files = 'Code/Project/PrinterSettingVC/BluetoothPrinterSetting/*.{h, m}'
+      bluetoothVC.source_files = 'Code/Project/PrinterSettingVC/BluetoothPrinterSetting/**/*.{h, m}'
     end
     
     vc.subspec 'DoucmentsPrinterSetting' do |doucmentVC|
-      doucmentVC.source_files = 'Code/Project/PrinterSettingVC/DoucmentsPrinterSetting/*.{h, m}'
+      doucmentVC.source_files = 'Code/Project/PrinterSettingVC/DoucmentsPrinterSetting/**/*.{h, m}'
     end
 
     vc.subspec 'PrintSetting' do |printView|
-      printView.source_files = 'Code/Project/PrinterSettingVC/PrintSetting/*.{h, m}'
+      printView.source_files = 'Code/Project/PrinterSettingVC/PrintSetting/**/*.{h, m}'
     end
 
     vc.subspec 'ReceiptPrinterSetting' do |receiptVC|
-      receiptVC.source_files = 'Code/Project/PrinterSettingVC/ReceiptPrinterSetting/*.{h, m}'
+      receiptVC.source_files = 'Code/Project/PrinterSettingVC/ReceiptPrinterSetting/**/*.{h, m}'
     end
   end
 
   s.subspec 'Widgets' do |widgets|
-    widgets.source_files = 'Code/Project/Widgets/*.{h, m}' 
+    widgets.source_files = 'Code/Project/Widgets/**/*.{h, m}' 
   end
 end
