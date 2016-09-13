@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Lixinlong" => "lixinlong@xkshi.com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/orangeLong/XPrinter.git", :commit => "5b7b5b3b13f1a1f86023b6c501520135e94a482b" }
+  s.source       = { :git => "https://github.com/orangeLong/XPrinter.git", :commit => "1689c4ff9ed73e20aa3d348b256c0f55a69498f7" }
 #  s.source       = { :path => "/Users/lixinlong/Desktop/XPrinter", :tag => "0.0.1"}
 #  s.source_files  = "Code/Project/**/*.{h,m}"
   s.resource  = "Code/Resource/XPrinterSource.bundle"
