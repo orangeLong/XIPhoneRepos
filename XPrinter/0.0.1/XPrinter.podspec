@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #  s.resource  = "libJOBluetooth.a"
   s.framework  = "UIKit"
 #  s.requires_arc = true
-  s.dependency "CocoaAsyncSocket", "~> 0.0.1"
+  s.dependency "CocoaAsyncSocket", "= 7.0.3"
   s.dependency "JGProgressHUD"
   
   s.subspec 'Header' do |header|
